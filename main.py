@@ -49,6 +49,7 @@ def all_notes():
      print(request.form.get('checkbox1'),10)
   return render_template('all_notes.html', notes=notes)
 
+
 @app.route('/add_note', methods=['GET', 'POST'])
 def add():
     if request.method=="GET":
